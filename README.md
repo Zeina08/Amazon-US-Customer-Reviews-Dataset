@@ -17,6 +17,7 @@ Executor memory = total memory – driver memory / num executors
 62-2 / 7 =  (around 8GB)
 
 **3. Data Exploration using Spark**:
+
 **a.** How many observations does your dataset have?
 There are 58075027 rows in the dataset.
 
@@ -48,6 +49,7 @@ Yes, for missing: total missing rows: 8953
 As for duplicate rows we did perform in the first edited jupyter (took too much space on the second attempt). duplicate rows: 58075027 - 58038800 = 36,227
 
 **4. Data Plots:**
+
 **d.** Clearly explain each plot and what insights it provides
 We conducted two plots:
 1.	The bar chart shows the top 10 product categories based on the number of reviews. The wireless and PC products are the top two categories, indicating that they received the highest level of user engagement. This also suggests that technology products are more frequently reviewed compared to other categories. On the other hand, video games have the lowest number of reviews among the top categories. Overall, the results show an uneven distribution of reviews across product_types.
