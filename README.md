@@ -16,7 +16,7 @@ Total cores -1
 Executor memory = total memory – driver memory / num executors
 62-2 / 7 =  (around 8GB)
 
-**3. Data Exploration using Spark:**
+**3. Data Exploration using Spark**:
 **a.** How many observations does your dataset have?
 There are 58075027 rows in the dataset.
 
