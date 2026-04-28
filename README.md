@@ -56,23 +56,10 @@ We conducted two plots:
 2.	Scatterplot:  suggests that star rating by itself doesn’t strongly predict how many helpful votes a review does receive. Most reviews cluster at relatively low helpful vote counts, which indicates that the majority don’t gain much traction. However, there are a few clear outliers: 4-star review with very high helpful votes and 1 star review with a large count as well. This could imply that while both positive and negative reviews can attract attention, usefulness is likely driven more by other factors we are yet to explore. 
 
 **5. Preprocessing Plan:**
-How will you handle missing values?
--> The proportion of the total missing values in this dataset compared to the total rows is very small.
-Therefore, the way we handle them is as follows: f
-- for the text columns: fill with uknown or unavailable.
-- drop rows if missing values are quite rare and won't affect the analysis/quality
-
-How will you handle data imbalance (if applicable)?
-  -> use a stratified train-test split as it can be used more of a reliable evaluation and ensures bias/fairness.
-
-What transformations will you apply (scaling, encoding, feature engineering)?
-  -> feature engineering: create useful features, such as: review length/sentiment scores, etc.
-  -> tokenization: split reviews into one wordings or tokens
-
-What Spark operations will you use for preprocessing?
- -> tokenization: tokenizer from pyspark.ml.feature
- -> missing values: dropna/fillna
- ->
+For our project, we will handle any null values by dropping them from the dataset to ensure that we don’t create imbalances. Since different variables may have different amounts of missing data, we will downsample to match the lowest independent variable count in order to maintain an unbiased dataset.
+For transformations, we will use a OneHotEncoder to convert product categories into binary variables so that any machine learning methods we use will be effective. We will also create beneficial variables such as review length. This can help us because reviews that are only one or two letters are likely not legitimate or may be considered “troll” reviews, and they can be excluded from the machine learning process. This will allow us to achieve better accuracy when determining whether a review is actually helpful or not.
+For the actual Spark operations, we will use dropna(),filter(), withColumn(), OneHotEncoder, a possible scaler, and other basic Python and SQL operations.
+This is what I got for step 5 let me know what you think
 
 
 
