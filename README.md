@@ -59,7 +59,7 @@ We conducted two plots:
 For our project, we will handle any null values by dropping them from the dataset to ensure that we don’t create imbalances. Since different variables may have different amounts of missing data, we will downsample to match the lowest independent variable count in order to maintain an unbiased dataset.
 For transformations, we will use a OneHotEncoder to convert product categories into binary variables so that any machine learning methods we use will be effective. We will also create beneficial variables such as review length. This can help us because reviews that are only one or two letters are likely not legitimate or may be considered “troll” reviews, and they can be excluded from the machine learning process. This will allow us to achieve better accuracy when determining whether a review is actually helpful or not.
 For the actual Spark operations, we will use dropna(),filter(), withColumn(), OneHotEncoder, a possible scaler, and other basic Python and SQL operations.
-This is what I got for step 5 let me know what you think
+
 
 
 
