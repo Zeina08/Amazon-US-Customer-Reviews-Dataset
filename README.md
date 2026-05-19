@@ -1,3 +1,5 @@
+**Dataset:https://www.kaggle.com/datasets/cynthiarempel/amazon-us-customer-reviews-dataset**
+
 **2.** **SDSC Expanse Environment Setup:**
 a. Expanse login/access: through web portal (accessed resources through ACCESS CI -> allocation portal)
 Environement: ran work in jupyter: python with pyspark
