@@ -22,15 +22,15 @@ Categorical variables (string):
 - Review_body: full review text 
 
 Numerical (continuous):
--Star_rating: ratings by users from 1-5
--Helpful_votes: number of users who found reviews to be helpful
--Total_votes: total votes on reviews 
+- Star_rating: ratings by users from 1-5
+- Helpful_votes: number of users who found reviews to be helpful
+- Total_votes: total votes on reviews 
 
 Identifier variables:
--Review_id: identifier for each review (unique)
--Product_id: identifier for products
--Product_parent: related to products(grouping)
--Customer_id: numerical id
+- Review_id: identifier for each review (unique)
+- Product_id: identifier for products
+- Product_parent: related to products(grouping)
+- Customer_id: numerical id
 
 Time-based variable:
 -Review_date: when reviews were posted 
