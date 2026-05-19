@@ -19,30 +19,34 @@ Executor memory = total memory – driver memory / num executors
 **3. Data Exploration using Spark**:
 
 **a.** How many observations does your dataset have?
-There are 58075027 rows in the dataset.
+There are 58075027 rows in the datase and 15 columns (features).
 
 **b.** Describe all columns in your dataset: their scales and data distributions. Describe categorical and continuous variables. Describe your target column.
 
 Categorical variables (string):
 -	Marketplace: US
--	Review_id: identifier for each review (unique)
--	Product_id: identifier for products
 -	Product_category: books, video games, etc
 -	Vine: previews whether a review is part of Amazon vine program (binary as in y/n)
 -	Verified_purchase: if purchases are verified 
 -	Review_headline: short text
 -	Review_body: full review text
-Numerical:
--	Customer_id: numerical id
--	Product_parent: related to products(grouping)
+Numerical (continuous):
 -	Star_rating: ratings by users from 1-5
 -	Helpful_votes: number of users who found reviews to be helpful
 -	Total_votes: total votes on reviews
+Identifier variables:
+-	Review_id: identifier for each review (unique)
+-	Product_id: identifier for products
+- Product_parent: related to products(grouping)
+- Customer_id: numerical id
+  
 Time-based variable: 
 -	Review_date: when reviews were posted
 Main target column:
 -	Star_rating: represents user sentiment (1-5)
 Through the describe output for the star_rating: the distribution is highly skewed towards 4-5 stars (most values clustering near the high end).
+
+In terms of columns, the dataset contains customer information, product attributes, review text, ratings, voting activity, and timestamps used to analyze factors associated with rteview helpfulness. The star_rating ranges from 1-5 (mean: 4.17) showing a distribution skewed toward higher ratings. helpful_votes and total_votes are right skewed count variables, with most reviews receving few votes and a small number receiving very high values. Product categories also vary greatly in scale, with review counts ranging in the millions. The data shows signs of imbalance with star_rating heavily concentrated in 4-5 star reviews, indicating positive reviews are much more common than lower-rated ones. 
 
 **c.** Do you have missing and duplicate values in your dataset?
 Yes, for missing: total missing rows: 8953 
