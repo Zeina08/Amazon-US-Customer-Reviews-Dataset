@@ -34,10 +34,10 @@ Identifier variables:
 - Customer_id: numerical id
 
 Time-based variable:
--Review_date: when reviews were posted 
+- Review_date: when reviews were posted 
 
 Main target column:
--Star_rating: represents user sentiment (1-5) Through the describe output for the star_rating: the distribution is highly skewed towards 4-5 stars (most values clustering near the high end).
+- Star_rating: represents user sentiment (1-5) Through the describe output for the star_rating: the distribution is highly skewed towards 4-5 stars (most values clustering near the high end).
 
 In terms of columns, the dataset contains customer information, product attributes, review text, ratings, voting activity, and timestamps used to analyze factors associated with review helpfulness. The star_rating ranges from 1-5 (mean: 4.17) showing a distribution skewed toward higher ratings. helpful_votes and total_votes are right skewed count variables, with most reviews receiving few votes and a small number receiving very high values. Product categories also vary greatly in scale, with review counts ranging in the millions. The data shows signs of imbalance with star_rating heavily concentrated in 4-5 star reviews, indicating positive reviews are much more common than lower-rated ones.
 
