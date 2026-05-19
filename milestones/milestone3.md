@@ -40,7 +40,7 @@ Main target column:
 
 In terms of columns, the dataset contains customer information, product attributes, review text, ratings, voting activity, and timestamps used to analyze factors associated with review helpfulness. The star_rating ranges from 1-5 (mean: 4.17) showing a distribution skewed toward higher ratings. helpful_votes and total_votes are right skewed count variables, with most reviews receiving few votes and a small number receiving very high values. Product categories also vary greatly in scale, with review counts ranging in the millions. The data shows signs of imbalance with star_rating heavily concentrated in 4-5 star reviews, indicating positive reviews are much more common than lower-rated ones.
 
-- Do you have missing and duplicate values in your dataset?
+Do you have missing and duplicate values in your dataset?
 Yes, for missing: total missing rows: 8953 As for duplicate rows we did perform in the first edited jupyter (took too much space on the second attempt). duplicate rows: 58075027 - 58038800 = 36,227
 
 **Data Plots:**
