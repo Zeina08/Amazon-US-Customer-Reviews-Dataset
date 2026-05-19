@@ -76,6 +76,15 @@ What are the next models you are thinking of for Milestone 4 and why? For Milest
 
 **Conclusion Section**
 
+What is the conclusion of your 1st model?
+
+Based on our first model, we found our Decision Tree to have around a .93 accuracy for both training and testing data. Given an accuracy of .93, our model does a fairly decent job in predicting whether a customer review is regarded as helpful
+
+What can be done to possibly improve it? To improve our model, a technique that could be is a possible tokenization of the customer review text. By tokenizing we allow ourselves to see a new perspective of the data that was once unavailable. From the tokenization, if we keep words such as "good", "bad" "helpful" "convenient", "great" we can still get all of the benefits of tokenization without making the decision tree unnecessarily large and overfitting.
+
+How did distributed computing help with this task? Distributed computing was very helpful in completing our task because it allowed us to split data filtering, cleaning, and computation onto multiple nodes. This parallel processing allows for efficient processing that would not be done on a singular device and given a dataset of 50GB, would most likely cause the device to crash.
+
+
 **Speedup Analysis:**
    1. Baseline Measurement: The decision tree model was trained using 1 executor to establish a baseline performance measurement. The recorded wall-clock training time was approximately 3.18 minutes.
    2. Scaled Measurement: Training tas was executed using the full executor configuration to measure ditributed performance. The recorded wall-clock training time was approximately: 3.06 minutes.
