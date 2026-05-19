@@ -77,14 +77,12 @@ Which model performs best and why? Both models perform equally well. The Random 
 What are the next models you are thinking of for Milestone 4 and why? For Milestone 4, the next step is to incorporate natural language processing (NLP) techniques to better analyze review text. Models such as TF-IDF with other advanced approaches will be explored to capture sentiment and contextual information/patterns within the reviews. Using spark will be efficient for large-scale text processing models.
 
 **Conclusion Section**
-
-What is the conclusion of your 1st model?
-
+**What is the conclusion of your 1st model?**
 Based on our first model, we found our Decision Tree to have around a .93 accuracy for both training and testing data. Given an accuracy of .93, our model does a fairly decent job in predicting whether a customer review is regarded as helpful
 
-What can be done to possibly improve it? To improve our model, a technique that could be is a possible tokenization of the customer review text. By tokenizing we allow ourselves to see a new perspective of the data that was once unavailable. From the tokenization, if we keep words such as "good", "bad" "helpful" "convenient", "great" we can still get all of the benefits of tokenization without making the decision tree unnecessarily large and overfitting.
+**What can be done to possibly improve it?** To improve our model, a technique that could be is a possible tokenization of the customer review text. By tokenizing we allow ourselves to see a new perspective of the data that was once unavailable. From the tokenization, if we keep words such as "good", "bad" "helpful" "convenient", "great" we can still get all of the benefits of tokenization without making the decision tree unnecessarily large and overfitting.
 
-How did distributed computing help with this task? Distributed computing was very helpful in completing our task because it allowed us to split data filtering, cleaning, and computation onto multiple nodes. This parallel processing allows for efficient processing that would not be done on a singular device and given a dataset of 50GB, would most likely cause the device to crash.
+**How did distributed computing help with this task?** Distributed computing was very helpful in completing our task because it allowed us to split data filtering, cleaning, and computation onto multiple nodes. This parallel processing allows for efficient processing that would not be done on a singular device and given a dataset of 50GB, would most likely cause the device to crash.
 
 
 **Speedup Analysis:**
