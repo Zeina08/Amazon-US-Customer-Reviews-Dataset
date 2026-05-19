@@ -11,8 +11,8 @@ Seven executors more are efficient for parallelism across the available cores.
 c. Formula: Total cores -1 8 – 1 = 7 executors Executor memory = total memory – driver memory / num executors (62 - 2) / 7 = (around 8GB)
 
 **Data Exploration using Spark:**
-a. How many observations does your dataset have? There are 58075027 rows in the datase and 15 columns (features).
-b. Describe all columns in your dataset: their scales and data distributions. Describe categorical and continuous variables. Describe your target column.
+- a. How many observations does your dataset have? There are 58075027 rows in the datase and 15 columns (features).
+- b. Describe all columns in your dataset: their scales and data distributions. Describe categorical and continuous variables. Describe your target column.
 
 Categorical variables (string):
 - Marketplace: US
