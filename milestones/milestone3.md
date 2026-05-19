@@ -14,12 +14,12 @@ a. How many observations does your dataset have? There are 58075027 rows in the 
 b. Describe all columns in your dataset: their scales and data distributions. Describe categorical and continuous variables. Describe your target column.
 
 Categorical variables (string):
--Marketplace: US
--Product_category: books, video games, etc
--Vine: indicates whether a review is part of Amazon vine program (binary as in y/n)
--Verified_purchase: whether purchases are verified
--Review_headline: short text
--Review_body: full review text 
+- Marketplace: US
+- Product_category: books, video games, etc
+- Vine: indicates whether a review is part of Amazon vine program (binary as in y/n)
+- Verified_purchase: whether purchases are verified
+- Review_headline: short text
+- Review_body: full review text 
 
 Numerical (continuous):
 -Star_rating: ratings by users from 1-5
