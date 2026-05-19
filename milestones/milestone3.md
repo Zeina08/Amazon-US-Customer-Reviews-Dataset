@@ -68,13 +68,14 @@ For our project, we will handle any null values by dropping them from the datase
 -We trained and evaluated two distributed machine learning models (decision tree and random forest). Both models were used to predict whether a review would be considered helpful based on features such as star rating, review length, and total votes. 
 
 
-**Fitting Analysis:** Training accuracy: ~ 0.929 vs Test accuracy: ~ 0.93 (small gap) Training and test accuracy results are almost identical, showing good generalization. There is no sign of overfitting or underfitting (low accuracy). Which means the model is learning patterns without memorizing the data.
+**Fitting Analysis:** 
+**Fitting graph:** Training accuracy: ~ 0.929 vs Test accuracy: ~ 0.93 (small gap) Training and test accuracy results are almost identical, showing good generalization. There is no sign of overfitting or underfitting (low accuracy). Which means the model is learning patterns without memorizing the data.
 
-Another model testing with different hyperparameters: Tree-based models (Decision Tree and Random Forest) were tested using different hyperparameters. Despite Random Forest being more complex, it did not show any improvement over Decision Tree. This suggests that the Decision Tree already captures most of the predictive patterns in the data.
+**Another model testing with different hyperparameters:** Tree-based models (Decision Tree and Random Forest) were tested using different hyperparameters. Despite Random Forest being more complex, it did not show any improvement over Decision Tree. This suggests that the Decision Tree already captures most of the predictive patterns in the data.
 
-Which model performs best and why? Both models perform equally well. The Random Forest doesn't significantly outperform the Decision Tree. Both models generalize well and achieve same accuracy. Overall, the Decision Tree is the preferred model because it provides the same performance with lower complexity and is faster when it comes to training data.
+**Which model performs best and why?** Both models perform equally well. The Random Forest doesn't significantly outperform the Decision Tree. Both models generalize well and achieve same accuracy. Overall, the Decision Tree is the preferred model because it provides the same performance with lower complexity and is faster when it comes to training data.
 
-What are the next models you are thinking of for Milestone 4 and why? For Milestone 4, the next step is to incorporate natural language processing (NLP) techniques to better analyze review text. Models such as TF-IDF with other advanced approaches will be explored to capture sentiment and contextual information/patterns within the reviews. Using spark will be efficient for large-scale text processing models.
+**What are the next models you are thinking of for Milestone 4 and why?** For Milestone 4, the next step is to incorporate natural language processing (NLP) techniques to better analyze review text. Models such as TF-IDF with other advanced approaches will be explored to capture sentiment and contextual information/patterns within the reviews. Using spark will be efficient for large-scale text processing models.
 
 **Conclusion Section**
 **What is the conclusion of your 1st model?**
