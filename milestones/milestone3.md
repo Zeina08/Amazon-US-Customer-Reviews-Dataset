@@ -1,3 +1,5 @@
+**Dataset**: https://www.kaggle.com/datasets/cynthiarempel/amazon-us-customer-reviews-dataset
+
 **Milestone 2: GitHub Setup, SDSC Expanse, & Data Exploration**
 
 **2. SDSC Expanse Environment Setup:** 
