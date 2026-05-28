@@ -90,6 +90,18 @@ Based on our first model, we found our Decision Tree to have around a .93 accura
    2. Scaled Measurement: Training tas was executed using the full executor configuration to measure ditributed performance. The recorded wall-clock training time was approximately: 3.06 minutes.
    3. Metrics: The scaled run achieved a speedup of around 1.04x over the baseline. With a single executor, efficiency is the same at around 1.04.
 
+
+**Milestone 4**
+**Fitting Analysis**
+For our second model we receives a training accuracy of .771 and a test accuracy of .748. The two accuracy are in close proximity of each other overfitting doesn't seem to be a huge issue. The model is doing a decent job of learning pattern about the data.
+
+**Potential Improvements**
+To improve our model we could increase our PCA from 50 to 100 and hashing up to 2500-5000. By increasing the hashing we allow for wider variety of word patterns which the PCA can then compress into a valuable set of words, after the idf is applied. We could also potenitaly switch to using boosted trees to pick up complex patterns that weren't identified in the previous model.
+
+**Dimensionality Reduction**
+**NOT DONE**
+
+
 # Data URL & Code
 - **Dataset:** https://www.kaggle.com/datasets/cynthiarempel/amazon-us-customer-reviews-dataset
 - **Notebook:** https://github.com/Zeina08/Amazon-US-Customer-Reviews-Dataset/blob/main/milestones/ReviewDataset.ipynb
