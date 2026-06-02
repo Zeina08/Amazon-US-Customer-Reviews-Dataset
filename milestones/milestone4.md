@@ -41,8 +41,8 @@ Model parameters:
 - Maximum Depth: 5
 - Training/Test split: 80/20
 - Features: PCA-transformed review text
-- 
-Model performance was evaluated using classification accuracy, confusion matrices, and PCA variance analysis.
+
+-> Model performance was evaluated using classification accuracy, confusion matrices, and PCA variance analysis.
 
 **Model 2: Random Forest Classification**
 
@@ -51,8 +51,8 @@ Model parameters:
 - Number of trees: 20
 - Training/Test split: 80/20
 - Features: PCA-transformed review text
-- 
-Model performance was evaluated using classification accuracy, confusion matrices, and PCA variance analysis.
+
+-> Model performance was evaluated using classification accuracy, confusion matrices, and PCA variance analysis.
 
 The detailed results, methods, and discussion are presented in the accompanying written report. 
 
