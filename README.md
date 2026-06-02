@@ -77,3 +77,98 @@ Model parameters:
 
 
 **Written Report Sections**
+
+**1.	Introduction**
+
+This project focuses on the prediction of helpful Amazon product reviews using machine learning models. With the large volume of user-generated content available on e-commerce platforms, identifying which reviews are likely to be useful can improve the browsing experience and support decision-making for customers. 
+Two machine learning models (Decision Tree and Random Forest) are implemented for review helpfulness classification. Both models use a unified text-based feature pipeline consisting of tokenization, stop-word removal, TF-IDF feature extraction, and PAC for dimensionality reduction.
+Decision Tree and Random Forest classifiers are applied to both feature representations in order to compare their performance. The goal is to evaluate how different feature engineering strategies and classification models influence the ability to accurately predict review helpfulness. 
+
+
+
+**2.	Figures**
+
+Figure A. Confusion Matrix of the Decision Tree.
+The below matrix summarizes the model’s classification performance by comparing predicted and actual review labels. Most non-helpful reviews were correctly classified while a larger number of helpful reviews were misclassified as non-helpful, which indicates a lower recall for the helpful class. 
+
+
+Figure B. Confusion Matrix of the Random Forest.
+The below matrix illustrated the classification results by comparing predicted and actual review labels. The model correctly identified 77,059 non-helpful reviews and 9,159 helpful reviews, while misclassifying a substantial number of helpful reviews as non-helpful, indicating stronger performance on the majority class than on the helpful class. 
+
+Figure C. Distribution of Helpful and Not Helpful Reviews.
+The below bar chart shows the class distribution in the dataset. The predominance of non-helpful reviews indicates a class imbalance, which may explain the lower recall observed for the helpful class in both Decision Tree and Random Forest models.  
+
+
+Figure D. Average review length by helpfulness class. 
+The helpful reviews tend to be longer than the non-helpful reviews, which indicates that review length or more detailed reviews may be associated with perceived usefulness. 
+
+Figure E. Comparison of test accuracy between the Decision Tree and Random Forest models.
+Both models achieved similar performance on the test set, with the Decision Tree slightly outperforming the Random Forest in overall accuracy. 
+
+
+Image.PCA cumulative explained variance. 
+The cumulative explained variance increases gradually with additional principal components, reaching about 43% at 80 components. This indicates that variance is spread across many features rather than concentrated in a few dimensions. 
+
+
+Table 1. Misclassification Analysis:
+The model correctly classified 86,665 reviews. The majority of classification errors were false negatives (22,248 cases), which suggests that the model struggled to identify some genuinely helpful reviews. In contrast, false positives were less (7,115 cases), which indicates a tendency to favor predictions of the non-helpful class.
+
+
+**3. Methods Section**
+
+**3.1 Data Exploration**
+
+The dataset was loaded into Spark and inspected to understand its structure, size, and missing values.
+The schema was printed to identify columns types, and summary statistics were computed for numerical and categorical variables. Aggregations were used to explore patterns across product categories, including number of reviews, average rating, and average helpful votes. 
+
+**3.2	Preprocessing**
+
+Data cleaning was performed by removing rows with missing values in key columns such as verified_purchase, product_category, review_body, star_rating, total_votes, and helpful_votes were removed. The rating and vote columns were converted to double precision. A review length feature was generated from the review text, and a binary target variable (helpful_label) was created, where reviews with at least one helpful vote were assigned a value of 1 and all others were assigned a value of 0.
+
+**3.3	Model 1**
+As for text preprocessing, it was performed using a Spark ML pipeline that included Tokenization, StopWords removal, and text features were converted into numerical feature vectors using HashingTF with 500 features. TF-IDF weighting was then applied. Principal Component Analysis (PCA) reduced the feature space to 80 principal components. 
+
+Decision Tree with a maximum depth of 5 was trained using the PCA features. 
+
+	The dataset was sampled at 1% of the original size and split into 80% of training data and 20% of testing data. 
+
+**3.4	Model 2**
+
+The same preprocessing and PCA pipeline were used, but the classifier was replaced with a Random Forest model. The Random Forest classifier was configured with 20 trees and trained using the PCA-transformed features.
+Both models were evaluated using classification accuracy on the training and testing datasets. PCA explained variance was also recorded to measure how much information was retained after dimensionality reduction. 
+
+**4.	Results Section**
+
+In this section, we present the outputs of the data processing pipeline and models. 
+
+
+#Model Performance:
+The performance of the classification models was evaluated using training and test accuracy.
+#Decision Tree: 
+-	Training Accuracy: 0.746
+-	Test Accuracy: 0.747
+#Random Forest: 
+-	Training Accuracy: 0.743
+-	Test Accuracy: 0.743
+Figure E: shows the summary of results.
+
+
+
+**5.	Discussion Section**
+
+The results indicate a moderate classification performance for both models, with Decision Tree slightly outperforming Random Forest. However, these results should be interpreted with caution. A 1% stratified sample was used for computational efficiency, which may limit generalizability to the full dataset. Additionally, the target variable (“helpful_label”) is derived from a simple threshold on helpful votes, which may introduce an inherently learnable pattern.  
+While PCA helped reduce dimensionality and improve computational performance, it also reduced interpretability of the text features. In general, although the results suggested reliable model performance, they may partially reflect the structure of the data rather than true predictive complexity. Further work using more balanced data and richer text representations could provide a more robust evaluation. 
+
+**6.	Conclusion**
+
+From this project, we learned how important big data processing is when it comes to working with large-scale datasets. A lot of the work wasn’t just about building models, but about cleaning the data properly, transforming text into usable features, and making sure everything runs efficiently at scale. 
+Using distributed computing with Spark also changed how we think about machine learning workflows. For instance, instead of focusing only on accuracy, we had to think also more about how the data is processed and whether the pipeline can handle large volumes of data without slowing down or breaking.
+If we had more time, we would have tried better text representations like Word2Vec or transformer-based embeddings since they capture meaning better than TF-IDF. Future work could include more stronger models like gradient boosting and spend time tuning parameters and dimensionality reduction to see if we could get better performance.  
+
+
+**7.	Statement of Collaboration**
+
+Throughout the entirety of our project Zaineh and I communicated very effectively given that there is about a 10-hour difference between the two of us. For better or for worse we never formally anointed one of us as the designated team leader, project manager, coder or writer but instead did all of the roles together. 
+The usual breakdown of how we went about doing our project was I’d propose the idea and if we agreed I’d then do about 75-85% of the coding for it, send it over to Zaineh who would finish the rest of the code and then would do about 90% of the write-ups for the milestone and then send it back to me to recheck. In all honesty I do believe that Zaineh contributed more to the project than I did, Zaineh did a lot of the tedious work such as setting up the github, setting up the configurations for the project, picking out the dataset, rechecking my write-ups and cleaning up any parts of the code I sent in on top of write up’s and more code. Overall, both Zaineh and I contributed heavily to our project and both us dabbled in every role that the project needed.
+
+
