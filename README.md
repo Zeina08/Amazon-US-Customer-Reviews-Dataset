@@ -2,7 +2,7 @@
 
 
 
-**Introduction**
+## Introduction
 
 Online shopping platforms contain millions of customer reviews, but only a small fraction are considered helpful by other users. Identifying helpful reviews can automatically improve product discovery and support better purchasing decisions. 
 In this project, we used distributed machine learning models on a large Amazon Reviews dataset to predict whether a review will receive helpful votes. 
