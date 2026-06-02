@@ -1,6 +1,6 @@
 **Milestone 4: Final Submission**
 
-![Confusion Matrix](images/confusion|_matrix_dt.png)
+
 
 **Introduction**
 
