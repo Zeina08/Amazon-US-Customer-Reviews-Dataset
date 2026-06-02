@@ -155,16 +155,16 @@ Both models were evaluated using classification accuracy on the training and tes
 
 In this section, we present the outputs of the data processing pipeline and models. 
 
-# Class Distribution
+#Class Distribution
 - Not Helpful (0): majority class
 - Helpful (0): minority class
 
-# PCA Dimenstionality Reduction
+#PCA Dimenstionality Reduction
 - Number of PCA components: 80
 - Total explained variance: 43.02%
 
   
-# Model Performance (Accuracy):
+#Model Performance (Accuracy):
 Decision Tree: 
 -	Training Accuracy: 0.746
 -	Test Accuracy: 0.748
@@ -177,19 +177,19 @@ Random Forest:
 - Training Error: 0.257
 -	Test Error: 0.257
 
-# Confusion Matrices (Decision Tree):
+#Confusion Matrices (Decision Tree):
 - True Negatives: 75,989
 - False Positives: 5,979
 - False Negatives: 23,252
 - True Positives: 10,808
 
-# Confusion Matrices (Random Forest):
+#Confusion Matrices (Random Forest):
 - True Negatives: 77,404
 - False Positives: 4,564
 - False Negatives: 25,271
 - True Positives: 8,789
 
-# Runt-time Performance
+#Runt-time Performance
 - Training time: ~3.66 minutes
 - Speedup: 1.04x
 - Efficiency: 1.04
