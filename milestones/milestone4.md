@@ -1,5 +1,9 @@
 **Milestone 4: Final Submission**
 
+**Introduction**
+The project analyzes Amazon customer reviews across multiple product categories to understand what makes a review helpful. It explores how factors such as star rating, verified purchase status, and review text influence whether a review receives helpful votes. 
+A machine learning pipeline is built to predict review helpfulness using both structured features and textual data. Since the dataset is too large for a single machine, Apache Spark is used for distributed processing, allowing efficient handling of large-scale data. 
+The goal is to identify patterns in helpful reviews and support better, more informed consumer decision-making. 
 
 
 **3. Fitting Analysis:**
