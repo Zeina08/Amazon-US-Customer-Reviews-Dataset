@@ -62,7 +62,7 @@ Model parameters:
 
 ## Fitting Analysis: 📊📈
 
-• For our second model we receives a training accuracy of ___ and a test accuracy of ___. The two accuracy are in close proximity of each other overfitting doesn't seem to be a huge issue. The model is doing a decent job of learning pattern about the data.
+• For our second model we received a training accuracy of 74.21% and a test accuracy of 74.29%. The two accuracy are in close proximity of each other overfitting doesn't seem to be a huge issue. The model is doing a decent job of learning pattern about the data.
 
 • Potential future improvements: to improve our model we could increase our PCA from 80 to 100 and hashing up to 2500-5000. By increasing the hashing we allow for wider variety of word patterns which the PCA can then compress into a valuable set of words, after the idf is applied. We could also potentially switch to using boosted trees to pick up complex patterns that weren't identified in the previous model.
 
@@ -103,25 +103,25 @@ Decision Tree and Random Forest classifiers are applied to both feature represen
 
 ## 2.	Figures
 
-Figure A. Confusion Matrix of the Decision Tree.
+Figure. Confusion Matrix of the Decision Tree.
 The below matrix summarizes the model’s classification performance by comparing predicted and actual review labels. Most non-helpful reviews were correctly classified while a larger number of helpful reviews were misclassified as non-helpful, which indicates a lower recall for the helpful class. 
 
 
-Figure B. Confusion Matrix of the Random Forest.
+Figure. Confusion Matrix of the Random Forest.
 The below matrix illustrated the classification results by comparing predicted and actual review labels. The model correctly identified 77,059 non-helpful reviews and 9,159 helpful reviews, while misclassifying a substantial number of helpful reviews as non-helpful, indicating stronger performance on the majority class than on the helpful class. 
 
-Figure C. Distribution of Helpful and Not Helpful Reviews.
+Figure. Distribution of Helpful and Not Helpful Reviews.
 The below bar chart shows the class distribution in the dataset. The predominance of non-helpful reviews indicates a class imbalance, which may explain the lower recall observed for the helpful class in both Decision Tree and Random Forest models.  
 
 
-Figure D. Average review length by helpfulness class. 
+Figure. Average review length by helpfulness class. 
 The helpful reviews tend to be longer than the non-helpful reviews, which indicates that review length or more detailed reviews may be associated with perceived usefulness. 
 
-Figure E. Comparison of test accuracy between the Decision Tree and Random Forest models.
+Figure. Comparison of test accuracy between the Decision Tree and Random Forest models.
 Both models achieved similar performance on the test set, with the Decision Tree slightly outperforming the Random Forest in overall accuracy. 
 
 
-Image.PCA cumulative explained variance. 
+Figure.PCA cumulative explained variance. 
 The cumulative explained variance increases gradually with additional principal components, reaching about 43% at 80 components. This indicates that variance is spread across many features rather than concentrated in a few dimensions. 
 
 
@@ -141,11 +141,12 @@ The schema was printed to identify columns types, and summary statistics were co
 Data cleaning was performed by removing rows with missing values in key columns such as verified_purchase, product_category, review_body, star_rating, total_votes, and helpful_votes were removed. The rating and vote columns were converted to double precision. A review length feature was generated from the review text, and a binary target variable (helpful_label) was created, where reviews with at least one helpful vote were assigned a value of 1 and all others were assigned a value of 0.
 
 **3.3	Model 1**
+
 As for text preprocessing, it was performed using a Spark ML pipeline that included Tokenization, StopWords removal, and text features were converted into numerical feature vectors using HashingTF with 500 features. TF-IDF weighting was then applied. Principal Component Analysis (PCA) reduced the feature space to 80 principal components. 
 
 Decision Tree with a maximum depth of 5 was trained using the PCA features. 
 
-	The dataset was sampled at 1% of the original size and split into 80% of training data and 20% of testing data. 
+The dataset was sampled at 1% of the original size and split into 80% of training data and 20% of testing data. 
 
 **3.4	Model 2**
 
