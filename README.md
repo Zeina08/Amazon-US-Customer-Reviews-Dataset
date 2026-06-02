@@ -1,5 +1,6 @@
 **Milestone 4: Final Submission**
 
+![Confusion Matrix](images/Confusion Matrix-DT.png)
 
 **Introduction**
 
@@ -55,8 +56,6 @@ Model parameters:
 
 -> Model performance was evaluated using classification accuracy, confusion matrices, and PCA variance analysis.
 
-The detailed results, methods, and discussion are presented in the accompanying written report. 
-
 
 **Fitting Analysis:** 📊📈
 
@@ -66,7 +65,6 @@ The detailed results, methods, and discussion are presented in the accompanying 
 
 • Dimensionality Reduction: Dimensionality reduction helped us gather insights on the review text but only on text that was deemed important. If we tried to test on every word in the review text the code would've probably crashed. Using a PCA reduced dimenstionality of the TF-IDF feature space by compressing inforamation from many text features into a smaller set of principal components. This reduced computational cost while preserving a significant portion of the original variance. 
 
-
 # Data URL & Code 🔗
 - **Dataset:** https://www.kaggle.com/datasets/cynthiarempel/amazon-us-customer-reviews-dataset
 - **Notebook:** https://github.com/Zeina08/Amazon-US-Customer-Reviews-Dataset/blob/main/milestones/ReviewDataset.ipynb
@@ -74,3 +72,8 @@ The detailed results, methods, and discussion are presented in the accompanying 
 # Environment:
 - **Platform:** SDSC Expanse (ACCESS CI allocation portal)
 - **Framework:** PySpark
+
+
+
+
+**Written Report Sections**
