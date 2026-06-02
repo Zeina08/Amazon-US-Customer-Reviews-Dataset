@@ -122,7 +122,8 @@ Both models achieved similar performance on the test set, with the Decision Tree
 
 
 Figure.PCA cumulative explained variance. 
-The cumulative explained variance increases gradually with additional principal components, reaching about 43% at 80 components. This indicates that variance is spread across many features rather than concentrated in a few dimensions. 
+The cumulative explained variance increases gradually with additional principal components, reaching about 43% at 80 components. This indicates that variance is spread across many features rather than concentrated in a few dimensions.
+![PCA Variance](images/PCA_Variance.png)
 
 
 Table 1. Misclassification Analysis:
