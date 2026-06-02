@@ -3,7 +3,8 @@
 
 **Introduction**
 
-Online shopping platforms contain millions of customer reviews, but only a small fraction are considered helpful by other users. Identifying helpful reviews can automatically improve product discovery and support better purchasing decisions. In this project, we used distributed machine learning models on a large Amazon Reviews dataset to predict whether a review will receive helpful votes. 
+Online shopping platforms contain millions of customer reviews, but only a small fraction are considered helpful by other users. Identifying helpful reviews can automatically improve product discovery and support better purchasing decisions. 
+In this project, we used distributed machine learning models on a large Amazon Reviews dataset to predict whether a review will receive helpful votes. 
 Since the data contains more than 58 million reviews, traditional single-machine processing is impractical. Therefore, Apache Spark was deployed on SDSC Expanse to perform scalable data processing, feature engineering, and model training. The project applies natural language processing techniques and machine learning methods to predict review helpfulness from review text. 
 
 
