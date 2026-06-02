@@ -4,10 +4,10 @@
 
 - [Introduction](#introduction)
 - [SDSC Expanse Environment](#sdsc-expanse-environment)
-- [Data Exploration](#data-exploration)
-- [Preprocessing](#preprocessing)
-- [Fitting Analysis](#fitting-analysis)
-- [Written Report Sections](#written-report-sections)
+- [Data Exploration](#data-exploration-)
+- [Preprocessing](#preprocessing-)
+- [Fitting Analysis](#fitting-analysis-)
+- [Written Report Sections](#written-report-sections-)
 
 ## Introduction
 
