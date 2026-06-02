@@ -1,9 +1,13 @@
 # Milestone 4: Final Submission 🚀
 
-# Table of Contents
+## Table of Contents
 
 - [Introduction](#introduction)
 - [SDSC Expanse Environment](#sdsc-expanse-environment)
+- [Data Exploration](#data-exploration)
+- [Preprocessing](#preprocessing)
+- [Fitting Analysis](#fitting-analysis)
+- [Written Report Sections](#written-report-sections)
 
 ## Introduction
 
