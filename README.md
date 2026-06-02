@@ -130,7 +130,7 @@ The cumulative explained variance increases gradually with additional principal 
 
 Table 1. Misclassification Analysis:
 The model correctly classified 86,665 reviews. The majority of classification errors were false negatives (22,248 cases), which suggests that the model struggled to identify some genuinely helpful reviews. In contrast, false positives were less (7,115 cases), which indicates a tendency to favor predictions of the non-helpful class.
-
+[PCA Variance](images/pca_variance.png)
 
 ## 3. Methods Section
 
