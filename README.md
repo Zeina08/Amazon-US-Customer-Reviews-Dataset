@@ -107,9 +107,13 @@ Figure. Confusion Matrix of the Decision Tree.
 The below matrix summarizes the model’s classification performance by comparing predicted and actual review labels. Most non-helpful reviews were correctly classified while a larger number of helpful reviews were misclassified as non-helpful, which indicates a lower recall for the helpful class. 
 <img src="images/confusion_matrix_dt.png" width="500"/>
 
+
+
 Figure. Confusion Matrix of the Random Forest.
 The below matrix illustrated the classification results by comparing predicted and actual review labels. The model correctly identified 77,059 non-helpful reviews and 9,159 helpful reviews, while misclassifying a substantial number of helpful reviews as non-helpful, indicating stronger performance on the majority class than on the helpful class. 
 <img src="images/confusion_matrix_rf.png" width="500"/>
+
+
 
 Figure. Distribution of Helpful and Not Helpful Reviews.
 The below bar chart shows the class distribution in the dataset. The predominance of non-helpful reviews indicates a class imbalance, which may explain the lower recall observed for the helpful class in both Decision Tree and Random Forest models.  <img src="images/class_distribution.png" width="500"/>
