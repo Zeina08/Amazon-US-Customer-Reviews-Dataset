@@ -34,6 +34,7 @@ The following steps were applied:
 To reduce computational cost while maintaining dataset characteristics, a 1% sample of the dataset was used for model training and evaluation. 
 
 **Model 1: Decision Tree Classification**
+
 The first distributed model used a DT classifier trained on PAC-transformed TF-IDF features. 
 Model parameters:
 - Maximum Depth: 5
@@ -42,16 +43,13 @@ Model parameters:
 Model performance was evaluated using classification accuracy, confusion matrices, and PCA variance analysis.
 
 **Model 2: Random Forest Classification**
+
 The second distributed model used a RF classifier with the same preprocessing pipeline.
 Model parameters:
 - Number of trees: 5
 - Training/Test split: 80/20
 - Features: PCA-transformed review text
 Model performance was evaluated using classification accuracy, confusion matrices, and PCA variance analysis.
-
-**Model                  Test Accuracy**
-Decision Tree             74.76%
-Random Forest             74.19%
 
 The detailed results, methods, and discussion are presented in the accompanying written report. 
 
