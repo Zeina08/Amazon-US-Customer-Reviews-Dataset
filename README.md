@@ -1,4 +1,4 @@
-# Milestone 4: Final Submission
+# Milestone 4: Final Submission 🚀
 
 
 
@@ -91,7 +91,7 @@ Model parameters:
 
 
 
-# Written Report Sections
+# Written Report Sections 📝
 
 ## 1.	Introduction
 
