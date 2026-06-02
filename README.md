@@ -1,6 +1,9 @@
 # Milestone 4: Final Submission 🚀
 
+# Table of Contents
 
+- [Introduction](#introduction)
+- [SDSC Expanse Environment](#sdsc-expanse-environment)
 
 ## Introduction
 
