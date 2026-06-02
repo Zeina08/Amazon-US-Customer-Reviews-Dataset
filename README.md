@@ -17,7 +17,7 @@ The work was conducted on SDSC Expanse  using Jupyter Notebook with PySpark. The
 ## Data Exploration 🔍
 
 The Amazon Reviews dataset contained 58,075,027 observations and 15 variables. Exploratory analysis revealed that:
-- Star ratings were heavilt concentrated in the 4-5 star range.
+- Star ratings were heavily concentrated in the 4-5 star range.
 - Helpful votes and total votes were highly right-skewed.
 - Product categories varied substantially in review volume.
 - Technology-related categories such as Wireless and PC products received the largest number of reviews.
@@ -46,7 +46,7 @@ Model parameters:
 - Training/Test split: 80/20
 - Features: PCA-transformed review text
 
--> Model performance was evaluated using classification accuracy, confusion matrices, and PCA variance analysis.
+Model performance was evaluated using classification accuracy, confusion matrices, and PCA variance analysis.
 
 **Model 2: Random Forest Classification**
 
@@ -56,7 +56,7 @@ Model parameters:
 - Training/Test split: 80/20
 - Features: PCA-transformed review text
 
--> Model performance was evaluated using classification accuracy, confusion matrices, and PCA variance analysis.
+Model performance was evaluated using classification accuracy, confusion matrices, and PCA variance analysis.
 
 
 
@@ -96,7 +96,7 @@ Model parameters:
 ## 1.	Introduction
 
 This project focuses on the prediction of helpful Amazon product reviews using machine learning models. With the large volume of user-generated content available on e-commerce platforms, identifying which reviews are likely to be useful can improve the browsing experience and support decision-making for customers. 
-Two machine learning models (Decision Tree and Random Forest) are implemented for review helpfulness classification. Both models use a unified text-based feature pipeline consisting of tokenization, stop-word removal, TF-IDF feature extraction, and PAC for dimensionality reduction.
+Two machine learning models (Decision Tree and Random Forest) are implemented for review helpfulness classification. Both models use a unified text-based feature pipeline consisting of tokenization, stop-word removal, TF-IDF feature extraction, and PCA for dimensionality reduction.
 Decision Tree and Random Forest classifiers are applied to both feature representations in order to compare their performance. The goal is to evaluate how different feature engineering strategies and classification models influence the ability to accurately predict review helpfulness. 
 
 
@@ -172,7 +172,7 @@ In this section, we present the outputs of the data processing pipeline and mode
 - Not Helpful (0): majority class
 - Helpful (0): minority class
 
-#PCA Dimenstionality Reduction
+#PCA Dimensionality Reduction
 - Number of PCA components: 80
 - Total explained variance: 43.02%
 
@@ -217,7 +217,7 @@ While PCA helped reduce dimensionality and improve computational performance, it
 
 From this project, we learned how important big data processing is when it comes to working with large-scale datasets. A lot of the work wasn’t just about building models, but about cleaning the data properly, transforming text into usable features, and making sure everything runs efficiently at scale. 
 Using distributed computing with Spark also changed how we think about machine learning workflows. For instance, instead of focusing only on accuracy, we had to think also more about how the data is processed and whether the pipeline can handle large volumes of data without slowing down or breaking.
-If we had more time, we would have tried better text representations like Word2Vec or transformer-based embeddings since they capture meaning better than TF-IDF. Future work could include more stronger models like gradient boosting and spend time tuning parameters and dimensionality reduction to see if we could get better performance.  
+If we had more time, we would have tried better text representations like Word2Vec or transformer-based embeddings since they capture meaning better than TF-IDF. Future work could include stronger models like gradient boosting and spend time tuning parameters and dimensionality reduction to see if we could get better performance.  
 
 
 ## 7.	Statement of Collaboration
