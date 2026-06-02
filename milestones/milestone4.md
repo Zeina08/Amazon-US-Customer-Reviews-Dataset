@@ -6,11 +6,11 @@ Online shopping platforms contain millions of customer reviews, but only a small
 Since the data contains more than 58 million reviews, traditional single-machine processing is impractical. Therefore, Apaache Spark was deployed on SDSC Expanse to perform scalable data processing, feature engineering, and model training. The project explores both structured review features and natural language processing techniques to determine which factors contribute most to review helpfulness. 
 
 
-**SDSC Expanse Environment**
+**SDSC Expanse Environment** 🛠️
 
 All experiments were conducted on SDSC Expanse  using Jupyter Notebook with PySpark. The Spark environment was configured with 64 GB of memory and 8 CPU cores. One core was reserved for the Spark driver, resulting in seven executors with approximately 8 GB of memory each. This configuration enabled distributed processing of the large-scale dataset. 
 
-**Data Exploration**
+**Data Exploration** 🔍
 
 The Amazon Reviews dataset contained 58,075,027 observations and 15 variables. Exploratory analysis revealed that:
 - Star ratings were heavilt concentrated in the 4-5 star range.
@@ -19,7 +19,7 @@ The Amazon Reviews dataset contained 58,075,027 observations and 15 variables. E
 - Technology-related categories such as Wireless and PC products received the largest number of reviews.
 
 
-**Preprocessing**
+**Preprocessing** 💻
 
 Data preprocessing was performed using Spark DataFram operations. 
 The following steps were applied: 
@@ -56,7 +56,7 @@ Random Forest             74.19%
 The detailed results, methods, and discussion are presented in the accompanying written report. 
 
 
-**Fitting Analysis:**
+**Fitting Analysis:** 📊📈
 
 • For our second model we receives a training accuracy of ___ and a test accuracy of ___. The two accuracy are in close proximity of each other overfitting doesn't seem to be a huge issue. The model is doing a decent job of learning pattern about the data.
 
@@ -65,7 +65,7 @@ The detailed results, methods, and discussion are presented in the accompanying 
 • Dimensionality Reduction: Dimensionality reduction helped us gather insights on the review text but only on text that was deemed important. If we tried to test on every word in the review text the code would've probably crashed. Using a PCA-based model allowed us to pick the best words that had the most accuracy, which made modeling a lot easier.
 
 
-# Data URL & Code
+# Data URL & Code 🔗
 - **Dataset:** https://www.kaggle.com/datasets/cynthiarempel/amazon-us-customer-reviews-dataset
 - **Notebook:** https://github.com/Zeina08/Amazon-US-Customer-Reviews-Dataset/blob/main/milestones/ReviewDataset.ipynb
 
