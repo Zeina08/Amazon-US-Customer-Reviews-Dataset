@@ -9,11 +9,12 @@ In this project, we used distributed machine learning models on a large Amazon R
 Since the data contains more than 58 million reviews, traditional single-machine processing is impractical. Therefore, Apache Spark was deployed on SDSC Expanse to perform scalable data processing, feature engineering, and model training. The project applies natural language processing techniques and machine learning methods to predict review helpfulness from review text. 
 
 
-**SDSC Expanse Environment** 🛠️
+## SDSC Expanse Environment 🛠️
 
 The work was conducted on SDSC Expanse  using Jupyter Notebook with PySpark. The Spark environment was configured with 64 GB of memory and 8 CPU cores. One core was reserved for the Spark driver, resulting in seven executors with approximately 8 GB of memory each. This configuration enabled distributed processing of the large-scale dataset. 
 
-**Data Exploration** 🔍
+
+## Data Exploration 🔍
 
 The Amazon Reviews dataset contained 58,075,027 observations and 15 variables. Exploratory analysis revealed that:
 - Star ratings were heavilt concentrated in the 4-5 star range.
@@ -23,7 +24,7 @@ The Amazon Reviews dataset contained 58,075,027 observations and 15 variables. E
 
 
 
-**Preprocessing** 💻
+## Preprocessing 💻
 
 Data preprocessing was performed using Spark DataFrame operations. 
 The following steps were applied: 
@@ -59,7 +60,7 @@ Model parameters:
 
 
 
-**Fitting Analysis:** 📊📈
+## Fitting Analysis: 📊📈
 
 • For our second model we receives a training accuracy of ___ and a test accuracy of ___. The two accuracy are in close proximity of each other overfitting doesn't seem to be a huge issue. The model is doing a decent job of learning pattern about the data.
 
@@ -90,7 +91,7 @@ Model parameters:
 
 
 
-**Written Report Sections**
+#### Written Report Sections
 
 **1.	Introduction**
 
