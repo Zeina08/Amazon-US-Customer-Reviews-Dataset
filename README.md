@@ -105,31 +105,38 @@ Decision Tree and Random Forest classifiers are applied to both feature represen
 
 Figure. Confusion Matrix of the Decision Tree.
 The below matrix summarizes the model’s classification performance by comparing predicted and actual review labels. Most non-helpful reviews were correctly classified while a larger number of helpful reviews were misclassified as non-helpful, which indicates a lower recall for the helpful class. 
+
 <img src="images/confusion_matrix_dt.png" width="500"/>
 
 
 
 Figure. Confusion Matrix of the Random Forest.
 The below matrix illustrated the classification results by comparing predicted and actual review labels. The model correctly identified 77,059 non-helpful reviews and 9,159 helpful reviews, while misclassifying a substantial number of helpful reviews as non-helpful, indicating stronger performance on the majority class than on the helpful class. 
+
 <img src="images/confusion_matrix_rf.png" width="500"/>
 
 
 
 Figure. Distribution of Helpful and Not Helpful Reviews.
-The below bar chart shows the class distribution in the dataset. The predominance of non-helpful reviews indicates a class imbalance, which may explain the lower recall observed for the helpful class in both Decision Tree and Random Forest models.  <img src="images/class_distribution.png" width="500"/>
+The below bar chart shows the class distribution in the dataset. The predominance of non-helpful reviews indicates a class imbalance, which may explain the lower recall observed for the helpful class in both Decision Tree and Random Forest models.  
+
+<img src="images/class_distribution.png" width="500"/>
 
 
 Figure. Average review length by helpfulness class. 
 The helpful reviews tend to be longer than the non-helpful reviews, which indicates that review length or more detailed reviews may be associated with perceived usefulness. 
+
 <img src="images/average_review_lengthn.png" width="500"/>
 
 
 Figure. Comparison of test accuracy between the Decision Tree and Random Forest models.
 Both models achieved similar performance on the test set, with the Decision Tree slightly outperforming the Random Forest in overall accuracy. 
+
 <img src="images/model_comparison.png" width="500"/>
 
 Figure.PCA cumulative explained variance. 
 The cumulative explained variance increases gradually with additional principal components, reaching about 43% at 80 components. This indicates that variance is spread across many features rather than concentrated in a few dimensions.
+
 <img src="images/pca_variance.png" width="500"/>
 
 
