@@ -22,6 +22,7 @@ The Amazon Reviews dataset contained 58,075,027 observations and 15 variables. E
 - Technology-related categories such as Wireless and PC products received the largest number of reviews.
 
 
+
 **Preprocessing** 💻
 
 Data preprocessing was performed using Spark DataFrame operations. 
@@ -57,6 +58,7 @@ Model parameters:
 -> Model performance was evaluated using classification accuracy, confusion matrices, and PCA variance analysis.
 
 
+
 **Fitting Analysis:** 📊📈
 
 • For our second model we receives a training accuracy of ___ and a test accuracy of ___. The two accuracy are in close proximity of each other overfitting doesn't seem to be a huge issue. The model is doing a decent job of learning pattern about the data.
@@ -65,6 +67,7 @@ Model parameters:
 
 • Dimensionality Reduction: Dimensionality reduction helped us gather insights on the review text but only on text that was deemed important. If we tried to test on every word in the review text the code would've probably crashed. Using a PCA reduced dimenstionality of the TF-IDF feature space by compressing inforamation from many text features into a smaller set of principal components. This reduced computational cost while preserving a significant portion of the original variance. 
 
+
 # Data URL & Code 🔗
 - **Dataset:** https://www.kaggle.com/datasets/cynthiarempel/amazon-us-customer-reviews-dataset
 - **Notebook:** https://github.com/Zeina08/Amazon-US-Customer-Reviews-Dataset/blob/main/milestones/ReviewDataset.ipynb
@@ -72,6 +75,9 @@ Model parameters:
 # Environment:
 - **Platform:** SDSC Expanse (ACCESS CI allocation portal)
 - **Framework:** PySpark
+
+
+
 
 
 
@@ -141,17 +147,44 @@ Both models were evaluated using classification accuracy on the training and tes
 
 In this section, we present the outputs of the data processing pipeline and models. 
 
+# Class Distribution
+- Not Helpful (0): majority class
+- Helpful (0): minority class
 
-#Model Performance:
-The performance of the classification models was evaluated using training and test accuracy.
-#Decision Tree: 
+# PCA Dimenstionality Reduction
+- Number of PCA components: 80
+- Total explained variance: 43.02%
+
+  
+# Model Performance (Accuracy):
+Decision Tree: 
 -	Training Accuracy: 0.746
--	Test Accuracy: 0.747
-#Random Forest: 
--	Training Accuracy: 0.743
--	Test Accuracy: 0.743
-Figure E: shows the summary of results.
+-	Test Accuracy: 0.748
+-	Training Error: 0.253
+-	Test Error: 0.251
+  
+Random Forest: 
+-	Training Accuracy: 0.742
+-	Test Accuracy: 0.7429
+- Training Error: 0.257
+-	Test Error: 0.257
 
+# Confusion Matrices (Decision Tree):
+- True Negatives: 75,989
+- False Positives: 5,979
+- False Negatives: 23,252
+- True Positives: 10,808
+
+# Confusion Matrices (Random Forest):
+- True Negatives: 77,404
+- False Positives: 4,564
+- False Negatives: 25,271
+- True Positives: 8,789
+
+# Runt-time Performance
+- Training time: ~3.66 minutes
+- Speedup: 1.04x
+- Efficiency: 1.04
 
 
 **5.	Discussion Section**
