@@ -126,7 +126,7 @@ The below bar chart shows the class distribution in the dataset. The predominanc
 Figure. Average review length by helpfulness class. 
 The helpful reviews tend to be longer than the non-helpful reviews, which indicates that review length or more detailed reviews may be associated with perceived usefulness. 
 
-<img src="images/average_review_lengthn.png" width="500"/>
+<img src="images/average_review_length.png" width="500"/>
 
 
 Figure. Comparison of test accuracy between the Decision Tree and Random Forest models.
