@@ -109,28 +109,28 @@ The below matrix summarizes the model’s classification performance by comparin
 
 Figure. Confusion Matrix of the Random Forest.
 The below matrix illustrated the classification results by comparing predicted and actual review labels. The model correctly identified 77,059 non-helpful reviews and 9,159 helpful reviews, while misclassifying a substantial number of helpful reviews as non-helpful, indicating stronger performance on the majority class than on the helpful class. 
-<img src="images/confusion_matrix_rf.png" width="300"/>
+<img src="images/confusion_matrix_rf.png" width="500"/>
 
 Figure. Distribution of Helpful and Not Helpful Reviews.
-The below bar chart shows the class distribution in the dataset. The predominance of non-helpful reviews indicates a class imbalance, which may explain the lower recall observed for the helpful class in both Decision Tree and Random Forest models.  ![Class Distribution](images/class_distribution.png)
+The below bar chart shows the class distribution in the dataset. The predominance of non-helpful reviews indicates a class imbalance, which may explain the lower recall observed for the helpful class in both Decision Tree and Random Forest models.  <img src="images/class_distribution.png" width="500"/>
 
 
 Figure. Average review length by helpfulness class. 
 The helpful reviews tend to be longer than the non-helpful reviews, which indicates that review length or more detailed reviews may be associated with perceived usefulness. 
-![Average Review Length](images/average_review_lengthn.png)
+<img src="images/average_review_lengthn.png" width="500"/>
 
 Figure. Comparison of test accuracy between the Decision Tree and Random Forest models.
 Both models achieved similar performance on the test set, with the Decision Tree slightly outperforming the Random Forest in overall accuracy. 
-![Model Comparison](images/model_comparison.png)
+<img src="images/model_comparison.png" width="500"/>
 
 Figure.PCA cumulative explained variance. 
 The cumulative explained variance increases gradually with additional principal components, reaching about 43% at 80 components. This indicates that variance is spread across many features rather than concentrated in a few dimensions.
-![PCA Variance](images/pca_variance.png)
+<img src="images/pca_variance.png" width="500"/>
 
 
 Table 1. Misclassification Analysis:
 The model correctly classified 86,665 reviews. The majority of classification errors were false negatives (22,248 cases), which suggests that the model struggled to identify some genuinely helpful reviews. In contrast, false positives were less (7,115 cases), which indicates a tendency to favor predictions of the non-helpful class.
-[PCA Variance](images/pca_variance.png)
+<img src="images/pca_variance.png" width="500"/>
 
 ## 3. Methods Section
 
