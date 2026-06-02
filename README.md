@@ -119,6 +119,7 @@ Figure. Average review length by helpfulness class.
 The helpful reviews tend to be longer than the non-helpful reviews, which indicates that review length or more detailed reviews may be associated with perceived usefulness. 
 <img src="images/average_review_lengthn.png" width="500"/>
 
+
 Figure. Comparison of test accuracy between the Decision Tree and Random Forest models.
 Both models achieved similar performance on the test set, with the Decision Tree slightly outperforming the Random Forest in overall accuracy. 
 <img src="images/model_comparison.png" width="500"/>
@@ -127,10 +128,6 @@ Figure.PCA cumulative explained variance.
 The cumulative explained variance increases gradually with additional principal components, reaching about 43% at 80 components. This indicates that variance is spread across many features rather than concentrated in a few dimensions.
 <img src="images/pca_variance.png" width="500"/>
 
-
-Table 1. Misclassification Analysis:
-The model correctly classified 86,665 reviews. The majority of classification errors were false negatives (22,248 cases), which suggests that the model struggled to identify some genuinely helpful reviews. In contrast, false positives were less (7,115 cases), which indicates a tendency to favor predictions of the non-helpful class.
-<img src="images/pca_variance.png" width="500"/>
 
 ## 3. Methods Section
 
